@@ -14,6 +14,7 @@ const router = Router();
 
 router.get('/crash-test', () => {
   setTimeout(() => {
+    console.log(1)
     throw new Error('Сервер сейчас упадёт');
   }, 0);
 });
